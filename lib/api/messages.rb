@@ -9,6 +9,7 @@ module MonkeyBusiness
       fail_without_id
       @options.merge!(options)
       @path += '/send'
+      self
     end
 
     def recipients(options = {})
